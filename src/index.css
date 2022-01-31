@@ -1,0 +1,29 @@
+*{
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+}
+:root{
+  --light-grey: #AAAAAA;
+  --main-color:#080B0E;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+@keyframes loading {
+  0% {
+    color: #fff;
+  }
+  50% {
+    color: #666;
+  }
+  100% {
+    color: #fff;
+  }
+}
