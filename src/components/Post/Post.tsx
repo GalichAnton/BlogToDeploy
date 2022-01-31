@@ -38,7 +38,7 @@ const Post: FC<IProps> = ({ post }) => {
             src={
               post.photoUrl.startsWith('https')
                 ? post.photoUrl
-                : `http://localhost:5656/${post.photoUrl}`
+                : `https://my-blog-diplom.herokuapp.com/${post.photoUrl}`
             }
             alt="test"
           />
