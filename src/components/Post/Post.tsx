@@ -36,7 +36,7 @@ const Post: FC<IProps> = ({ post }) => {
           <img
             className={styles.post__img}
             src={
-              post.photoUrl.startsWith('http')
+              post.photoUrl.startsWith('https')
                 ? post.photoUrl
                 : `http://localhost:5656/${post.photoUrl}`
             }
