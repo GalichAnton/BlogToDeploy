@@ -50,11 +50,11 @@ const Posts = () => {
   return (
     <div className={styles.posts__container}>
       <SearchLine />
-      <div className={styles.posts}>
+      {posts ? <div className={styles.posts}>
         {posts.map((post) => (
-          <Post key={post._id} post={post} />
+            <Post key={post._id} post={post}/>
         ))}
-      </div>
+      </div> : null}
       <div className={styles.posts__bottom}>
         <div className={styles.posts__btns}>
           <button
