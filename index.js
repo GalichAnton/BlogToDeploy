@@ -20,7 +20,7 @@ app.use(express.json());
 app.use(morgan("dev"));
 
 app.use(express.static(__dirname + "/build"));
-app.use(express.static(__dirname + "/public/uploads"));
+app.use(express.static(__dirname + "./blog-api/public/uploads"));
 initRoutes(app);
 
 mongoose
