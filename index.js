@@ -21,7 +21,6 @@ app.use(express.json());
 app.use(morgan("dev"));
 
 app.use(express.static(__dirname + "/build"));
-app.use(express.static(path.join(__dirname, '/uploads')));
 initRoutes(app);
 
 mongoose
