@@ -38,7 +38,7 @@ const Post: FC<IProps> = ({ post }) => {
             src={
               post.photoUrl.startsWith('http')
                 ? post.photoUrl
-                : `${process.env.REACT_APP_CONTENT_API_URL}${post.photoUrl}`
+                : `${post.photoUrl}`
             }
             alt="test"
           />
