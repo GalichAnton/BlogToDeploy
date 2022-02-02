@@ -26,7 +26,7 @@ const Post: FC<IProps> = ({ post }) => {
           <object>
             {isOwner ? (
               <NavLink to={`/editPage/${post._id}`}>
-                <img src="/img/edit.svg" alt="edit" />
+                <img src="/img/edit.svg" alt="edit" className={styles.post__edit} />
               </NavLink>
             ) : null}
           </object>
@@ -36,9 +36,9 @@ const Post: FC<IProps> = ({ post }) => {
           <img
             className={styles.post__img}
             src={
-              post.photoUrl.startsWith('https')
+              post.photoUrl.startsWith('http')
                 ? post.photoUrl
-                : `https://my-blog-diplom.herokuapp.com/blog-api/public${post.photoUrl}`
+                : `${process.env.REACT_APP_CONTENT_API_URL}${post.photoUrl}`
             }
             alt="test"
           />
